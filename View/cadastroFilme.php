@@ -3,7 +3,7 @@
 include("header.php");
 ?>
 <div class="container">
-    <form method="../Controller/inserirFilme.php" action="get" class="row g-3">
+    <form action="../Controller/inserirFilme.php" method="get" class="row g-3">
         <div class="col-md-8">
             <label for="inputFilme" class="form-label">Filme</label>
             <input type="text" name="filme" class="form-control" id="inputFilme">
@@ -25,7 +25,7 @@ include("header.php");
             <input type="text" name="url" class="form-control" id="inputURL">
         </div>
         <div class="form-floating">
-            <textarea class="form-control" name="sinopse " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <textarea class="form-control" name="sinopse" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
             <label for="floatingTextarea2">Sinopse</label>
         </div>
 
