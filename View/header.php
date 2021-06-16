@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Streaming TechFlix</a>
+            <a class="navbar-brand" href="#">TechFlix</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,7 +27,7 @@
                             Funcionário
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="cadastroFilme.php">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="cadastroFuncionario.php">Cadastrar</a></li>
                             <li><a class="dropdown-item" href="#">Buscar</a></li>
                             <li><a class="dropdown-item" href="#">Alterar</a></li>
                         </ul>
@@ -49,7 +49,7 @@
                             Filme
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="cadastroFilme.php">Cadastrar</a></li>
                             <li><a class="dropdown-item" href="#">Buscar</a></li>
                             <li><a class="dropdown-item" href="#">Alterar</a></li>
                         </ul>
