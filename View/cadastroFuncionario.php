@@ -32,7 +32,7 @@ if ($email) {
         <input type="hidden" name="codusuFK" value="<?= $codusu ?>">
 
         <div class="col-12">
-            <label class="form-label">E-mail de usuário validado</label>
+            <label class="form-label">E-mail de usuário válido</label>
             <input type="e-mail" disabled value="<?= $email ?>" name="email" class="form-control">
         </div>
 
