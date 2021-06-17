@@ -29,7 +29,6 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="cadastroFuncionario.php">Cadastrar</a></li>
                             <li><a class="dropdown-item" href="#">Buscar</a></li>
-                            <li><a class="dropdown-item" href="#">Alterar</a></li>
                         </ul>
                     </li>
 
@@ -40,7 +39,6 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="cadastroUsuario.php">Cadastrar</a></li>
                             <li><a class="dropdown-item" href="#">Buscar</a></li>
-                            <li><a class="dropdown-item" href="#">Alterar</a></li>
                         </ul>
                     </li>
 
@@ -49,9 +47,8 @@
                             Filme
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="cadastroFilme.php">Cadastrar</a></li>
-                            <li><a class="dropdown-item" href="#">Buscar</a></li>
-                            <li><a class="dropdown-item" href="#">Alterar</a></li>
+                            <li><a class="dropdown-item" href="../View/cadastroFilme.php">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="../View/visualizarFilme.php">Buscar</a></li>
                         </ul>
                     </li>
 
@@ -62,7 +59,6 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">Cadastrar</a></li>
                             <li><a class="dropdown-item" href="#">Buscar</a></li>
-                            <li><a class="dropdown-item" href="#">Alterar</a></li>
                         </ul>
                     </li>
                 </ul>

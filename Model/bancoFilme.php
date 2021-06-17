@@ -10,10 +10,15 @@ function visuNomeFilme($conexao, $filme)
 {
     $query = "select * from tbfilme where nomefil like '%{$filme}%'";
     $resultado = mysqli_query($conexao, $query);
-    $infoFilme = mysqli_fetch_assoc($resultado);
+    //$infoFilme = mysqli_fetch_assoc($resultado);
 
-    $_SESSION["infoFilme"] = array();
-    $_SESSION["infoFilme"] = $infoFilme;
+    return $resultado;
+}
+
+function visuCodigoFilme($conexao, $codigo){
+    $query ="Select * from tbfilme where codfil={$codigo}";
+    $resultado = mysqli_query($conexao, $query);
+
     return $resultado;
 }
 

@@ -1,4 +1,5 @@
 <?php 
+include_once("../View/header.php");
 require_once("../Model/bancoFilme.php");
 require_once("../Model/conexao.php");
 
@@ -9,3 +10,5 @@ if(insereFilme($conexao, $filme, $genero, $sinopse, $ano, $capa, $url)){
 }else{
     echo("O Filme não foi para o banco de dados!");
 }
+
+include_once("../View/footer.php");
