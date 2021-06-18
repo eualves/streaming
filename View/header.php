@@ -57,7 +57,7 @@
                             Série
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="../View/cadastroSerie.php">Cadastrar</a></li>
                             <li><a class="dropdown-item" href="#">Buscar</a></li>
                         </ul>
                     </li>
