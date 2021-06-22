@@ -11,6 +11,17 @@ include_once("../Model/conexao.php");
       <label class="form-label">Digite o nome do filme</label>
       <input type="text" required class="form-control" name="filme">
       </br>
+
+      <div class="col-12">
+      <label class="form-label">Escolha o gênero do filme</label>
+      <input type="text" required class="form-control" name="filme">
+      </br>
+
+      <div class="col-12">
+      <label class="form-label">Digite o ano do filme</label>
+      <input type="number" min="1900" max="2050" required class="form-control" name="filme">
+      </br>
+
       <div class="col-12">
         <button type="submit" class="btn btn-primary">Localizar</button>
       </div>
@@ -26,6 +37,7 @@ include_once("../Model/conexao.php");
         <th scope="col">Ano</th>
         <th scope="col">Capa</th>
         <th scope="col">Alterar</th>
+        <th scope="col">Deletar</th>
       </tr>
     </thead>
     <tbody>
@@ -39,15 +51,15 @@ include_once("../Model/conexao.php");
           <td><?= $dados["nomefil"] ?></td>
           <td><?= $dados["generofil"] ?></td>
           <td><?= $dados["anofil"] ?></td>
-          <td><img src="<?= $dados["capafil"]?>" width="50"> </td>
+          <td><img src="<?= $dados["capafil"] ?>" width="50"> </td>
           <td>
-          <a class="btn btn-primary" href="alterarFilme.php?codigo=<?=$dados["codfil"]?>">Alterar</a>
+            <a class="btn btn-primary" href="alterarFilme.php?codigo=<?= $dados["codfil"] ?>">Alterar</a>
           </td>
           <td>
-          <form action="../Controller/deleteFilme.php" method="POST"> 
-          <input type="hidden" name="codfil" value="<?= $dados["codfil"] ?>">
-          <button class="btn btn-danger" type="submit">Deletar</button>
-          </form>
+            <form action="../Controller/deleteFilme.php" method="POST">
+              <input type="hidden" name="codfil" value="<?= $dados["codfil"] ?>">
+              <button class="btn btn-danger" type="submit">Deletar</button>
+            </form>
           </td>
         </tr>
       <?php

@@ -27,6 +27,7 @@ include_once("../Model/conexao.php");
                 <th scope="col">Gênero</th>
                 <th scope="col">Capa</th>
                 <th scope="col">Alterar</th>
+                <th scope="col">Deletar</th>
             </tr>
         </thead>
         <tbody>
@@ -41,7 +42,7 @@ include_once("../Model/conexao.php");
                     <td><?= $dados["temporadaserie"] ?></td>
                     <td><?= $dados["episodioserie"] ?></td>
                     <td><?= $dados["generoserie"] ?></td>
-                    <td><img src="<?= $dados["capaserie"] ?>" width="50"> </td>
+                    <td><img src="<?= $dados["capaserie"] ?>"width="50"> </td>
                     <td>
                         <a class="btn btn-primary" href="alterarSerie.php?codigo=<?= $dados["codserie"] ?>">Alterar</a>
                     </td>
