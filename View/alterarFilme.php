@@ -51,7 +51,6 @@ $filme = mysqli_fetch_assoc($resul);
         </div>
     </form>
 </div>
-
 <?php
 include("footer.php")
 ?>

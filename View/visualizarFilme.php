@@ -26,7 +26,6 @@ include_once("../Model/conexao.php");
         <th scope="col">Ano</th>
         <th scope="col">Capa</th>
         <th scope="col">Alterar</th>
-        <th scope="col">Deletar</th>
       </tr>
     </thead>
     <tbody>
