@@ -1,5 +1,6 @@
 <?php
-session_start();
+include_once("../Model/bancoUsuario.php");
+liberaAcesso();
 include("header.php");
 
 $email = isset($_SESSION["emailusubusca"]) ? $_SESSION["emailusubusca"] : "";
@@ -19,7 +20,7 @@ if ($email) {
 
         <div class="col-12">
             <label class="form-label">Digite um e-mail de usuário válido</label>
-            <input type="e-mail" value="<?= $email ?>" class="form-control" name="email">
+            <input type="e-mail" required value="<?= $email ?>" class="form-control" name="email">
             </br>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Localizar</button>

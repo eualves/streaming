@@ -2,6 +2,8 @@
 include_once("header.php");
 include_once("../Model/bancoFilme.php");
 include_once("../Model/conexao.php");
+include_once("../Model/bancoUsuario.php");
+liberaAcesso();
 ?>
 
 <div class="container">

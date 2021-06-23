@@ -13,6 +13,11 @@
 <body>
     <div class="container">
         <form id="formlogin" action="../Controller/logarFun.php" method="post">
+            <?php
+            session_start();
+            $msg = isset($_SESSION["msg"]) ? $_SESSION["msg"] : "";
+            echo ($msg)
+            ?>
             <div class="row mb-3">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
@@ -29,6 +34,7 @@
             <a class="btn btn-primary" href="formEsqueciSenha.php">Esqueci a senha</a>
         </form>
     </div>
+    
 </body>
 
 </html>

@@ -2,6 +2,7 @@
 include_once("header.php");
 include_once('../Model/conexao.php');
 include_once('../Model/bancoFilme.php');
+liberaAcesso();
 
 $codigo = $_GET["codigo"];
 

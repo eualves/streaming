@@ -1,17 +1,16 @@
 <?php
 include_once("../Model/conexao.php");
 include_once("../Model/bancoUsuario.php");
-include_once("../View/header.php");
 
 $email= $_POST["email"];
 $senha= $_POST["senha"];
+$acesso= BuscarAcesso($conexao,$email,$senha);
 
-if(buscarAcesso($conexao,$email,$senha)){
-    echo("ok");
-    //header("Location: ../View/AreaFuncionario.php");
+if($acesso === $email){
+    header("Location: ../View/AreaFuncionario.php");
 }else{
-    echo("ixi");
-    //header("Location: ../View/acessoFun.php");
+    $_SESSION["msg"] = "<div class='alert alert-danger' role='alert'>Os dados não conferem... tente novamente.</div>";
+    header("Location: ../View/acessoFun.php");
 }
 
 die();

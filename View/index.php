@@ -11,15 +11,14 @@
 </head>
 
 <body>
-  <div class="container">
 
-    <ul class="nav justify-content-end">
+    <ul class="nav justify-content-end" style="background-color: gray; height: 50px; padding: 5px;">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Logar</a>
+        <a class="btn btn-primary" aria-current="page" href="acessoFun.php">Logar</a>
 
     </ul>
-    <img class="fundo" src="img/principalstreaming.gif">
-  </div>
+    <img class="fundo" src="img/fundo1.jpg" style="width: 100%;">
+
 </body>
 
 </html>

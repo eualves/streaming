@@ -1,3 +1,7 @@
+<?php
+include_once("../Model/bancoUsuario.php");
+liberaAcesso();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -12,7 +16,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">TechFlix</a>
+            <a class="navbar-brand" href="">TechFlix</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -60,6 +64,15 @@
                             <li><a class="dropdown-item" href="../View/cadastroSerie.php">Cadastrar</a></li>
                             <li><a class="dropdown-item" href="../View/visualizarSerie.php">Buscar</a></li>
                         </ul>
+                    </li>
+
+                    <li class="nav-item dropdown"><a class="nav-link" href="">Olá <?php echo ($_SESSION["funcionario"]) ?>
+                    </li></a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="../Controller/logout.php" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                            Sair
+                        </a>
                     </li>
                 </ul>
             </div>

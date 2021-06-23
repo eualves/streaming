@@ -2,6 +2,9 @@
 include_once("Header.php");
 include_once('../Model/conexao.php');
 include_once('../Model/bancoSerie.php');
+include_once("../Model/bancoUsuario.php");
+liberaAcesso();
+
 
 $codigo = $_GET["codigo"];
 
